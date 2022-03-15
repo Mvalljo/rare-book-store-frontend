@@ -199,6 +199,7 @@ export default function AddCustomer() {
                                                         name="state"
                                                         value={formState.state ?? ""}
                                                         onChange={handleChange}
+                                                        placeholder="Florida"
                                                         type="text"
                                                     />
                                                 </Form.Group>
@@ -210,6 +211,7 @@ export default function AddCustomer() {
                                                         name="zipcode"
                                                         value={formState.zipcode ?? ""}
                                                         onChange={handleChange}
+                                                        placeholder="XXXXX"
                                                         type="text" />
                                                 </Form.Group>
                                             </Col>
@@ -222,6 +224,7 @@ export default function AddCustomer() {
                                                         name="phone"
                                                         value={formState.phone ?? ""}
                                                         onChange={handleChange}
+                                                        placeholder="(XXX) XXX-XXXX"
                                                         type="text"
                                                     />
                                                 </Form.Group>
@@ -233,6 +236,7 @@ export default function AddCustomer() {
                                                         name="vip"
                                                         value={formState.vip ?? ""}
                                                         onChange={handleChange}
+                                                        placeholder="true/false"
                                                         type="text"
                                                     />
                                                 </Form.Group>

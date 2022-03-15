@@ -13,28 +13,30 @@ export default function BookTable() {
     }, []);
 
     return (
-        <Card bg="dark">
-            <Card.Title className="text-center pt-2 text-white"><h3>Book Inventory</h3></Card.Title>
-            <Table striped bordered hover variant="dark">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>Genre</th>
-                        <th>Year Published</th>
-                        <th>Edition</th>
-                        <th>Biding</th>
-                        <th>Condition</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {books.map((book) => (
-                        <BookRow key={book.id} book={book} />
-                    ))}
-                </tbody>
-            </Table>
-        </Card>
-    )
+      <Card bg="dark">
+        <Card.Title className="text-center pt-2 text-white">
+          <h3>Book Inventory</h3>
+        </Card.Title>
+        <Table striped bordered hover variant="dark">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+              <th>Year Published</th>
+              <th>Edition</th>
+              <th>Biding</th>
+              <th>Condition</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            {books.map((book) => (
+              <BookRow key={book.bookId} book={book} />
+            ))}
+          </tbody>
+        </Table>
+      </Card>
+    );
 }

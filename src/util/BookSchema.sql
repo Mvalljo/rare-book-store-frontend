@@ -1,3 +1,4 @@
+-- Example book seed
 use bookstore;
 
 INSERT INTO `book` (`title`,`author`,`genre`,`year_written`,`edition`,`binding`,`book_condition`,`price`)
@@ -52,7 +53,7 @@ VALUES
   ("Mandy and the Leviathan","Adara Britt","Fantasy","1916","1st","Hardcover","Fine",1217.24),
   ("The Anatomy of Deceit","Nissim Summers","SciFi","1903","1st","Hardcover","Good",132.91),
   ("The Saxon's Storm","Noah H. Winters","Western","1977","1st","Hardcover","Good",170.07);
-INSERT INTO `book` (`title`,`author`,`genre`,`year_Written`,`edition`,`binding`,`book_Condition`,`price`,`customer_Id`)
+INSERT INTO `book` (`title`,`author`,`genre`,`year_Written`,`edition`,`binding`,`book_Condition`,`price`)
 VALUES
   ("A Singular Fate","Stewart Moran","Poetry","1904","1st","Hardcover","Very-Good",1369.64),
   ("Circles of Joy","McKenzie Holden","Fantasy","1897","1st","Hardcover","Fine",1384.65),
